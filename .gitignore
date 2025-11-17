@@ -1,171 +1,51 @@
-# =====================================================================
-# 🤖 FLUTTER / DART OFFICIAL IGNORE (FULL VERSION)
-# =====================================================================
-
-# Flutter specific
+# ========================
+# Flutter / Dart base ignore
+# ========================
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub/
 .dart_tool/
-Flutter.podspec
-generated_plugin_registrant.dart
-
-# Build outputs
 build/
-ios/Flutter/App.framework
-ios/Flutter/Flutter.framework
-ios/Flutter/Generated.xcconfig
-ios/Flutter/ephemeral/
-macos/Flutter/ephemeral/
-windows/Flutter/ephemeral/
-linux/Flutter/ephemeral/
-
-# Plugin builds
-**/android/app/debug/
-**/android/app/profile/
-**/android/app/release/
-
-# Android Specific
+ios/
 android/.gradle/
-android/captures/
-android/gradlew
-android/gradlew.bat
 android/local.properties
-android/*.keystore
-android/key.properties
-android/app/google-services.json
-*.jks
-*.keystore
-
-# iOS Specific
-ios/.generated/
-ios/Flutter/.last_build_id
-ios/Pods/
-ios/Runner/GeneratedPluginRegistrant.*
-ios/*/Flutter.podspec
-ios/Runner.xcodeproj/project.xcworkspace/
-ios/Runner.xcworkspace/
-ios/build/
-*.xcworkspace
-*.xcuserstate
-*.xcuserdatad
-*.pbxuser
-
-# macOS
-macos/Runner.xcodeproj/project.xcworkspace/
-macos/Runner.xcworkspace/
-macos/Flutter/ephemeral/
-macos/Pods/
-
-# Web
+macos/
+windows/
+linux/
 web/.dart_tool/
-web/.firebase/
-web/compiled/
 
-# Windows
-windows/flutter/
-windows/.vs/
-windows/Runner/GeneratedPluginRegistrant.*
-
-# Linux
-linux/flutter/
-linux/Runner/GeneratedPluginRegistrant.*
-
-# =====================================================================
-# 🔧 DEVELOPMENT / EDITOR
-# =====================================================================
-
-# VSCode
+# VSCode / Editor
 .vscode/
-.history/
-
-# JetBrains / Android Studio
 .idea/
 *.iml
 
 # Logs
 *.log
-logs/
-pubspec.lock
 
-# Misc
-*.tmp
-*.temp
-temp/
-tmp/
-
-# Coverage
-coverage/
-coverage/lcov.info
-
-# =====================================================================
-# 💾 OS SYSTEM FILES
-# =====================================================================
-
-# macOS
+# OS Files
 .DS_Store
-.AppleDouble
-.LSOverride
-.Icon?
-._*
-
-# Windows
 Thumbs.db
-ehthumbs.db
-Desktop.ini
 
-# Linux
-*~
-
-# =====================================================================
-# 🔐 SENSITIVE FILES
-# =====================================================================
-.env
-.env.*
-*.plist
-*.json
-
-# =====================================================================
-# 📁 DATABASES / BINARY / LARGE FILES
-# =====================================================================
-*.db
-*.sqlite
-*.sqlite3
-*.bak
-*.mp4
-*.mp3
-*.zip
-*.rar
-*.7z
-*.iso
-*.bin
-*.exe
-*.dll
-
-# =====================================================================
-# 🎯 GIT ITSELF
-# =====================================================================
-.gitattributes
-
-# =====================================================================
-# ⭐ FORCE ONLY main.dart TO EXIST IN REPOSITORY
-# =====================================================================
-
-# Ignore EVERYTHING
+# =============================
+# Ignore EVERYTHING by default
+# =============================
 *
 
-# Allow .gitignore itself
+# =============================
+# Allow only these files/folders
+# =============================
+
+# Allow gitignore itself
 !.gitignore
 
-# Allow main.dart (change if file is elsewhere)
+# Allow main.dart
 !lib/main.dart
 
-# Allow pubspec to avoid build errors (optional)
+# Allow pubspec
 !pubspec.yaml
 !pubspec.lock
 
-# Allow assets folder (optional)  
-# ถ้าไม่ต้องการ ให้ลบ 2 บรรทัดนี้
+# Allow assets folder (optional)
 !assets/
 !assets/**/*
